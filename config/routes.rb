@@ -7,4 +7,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  root to: redirect('/welcome')
+  get "about", to: "about#index"
+  get "work", to: "work#index"
+  get "contact", to: "contact#index"
+  get "welcome", to: "welcome#index"
 end
