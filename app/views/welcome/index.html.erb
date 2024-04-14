@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  #container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  #bio {
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: lightblue;
+    color: #white;
+    padding: 10px 0;
+    font-color: white;
+    text-align: left;
+  }
+</style>
+<body>
+  <header>
+    &nbsp;&nbsp;&nbsp;<%= link_to "About Me", about_path %>&nbsp;&nbsp;&nbsp;<%= link_to "My Work", work_path %>&nbsp;&nbsp;&nbsp;<%= link_to "Contact Me", contact_path %>
+  </header>
+    <div id="container">
+        <h1>Welcome to Dalton's portfolio!</h1>
+        <div id="bio">
+            <p>Hello, I'm Dalton Mann, and I'm a senior at the University of Memphis. I'm a major in computer
+            science with a concentration in cybersecurity. I'm currently a CyberCorps student who is
+            going to complete an internship at the Tinker Air Force Base in Oklahoma City this summer.
+            I'm very interested in cybersecurity and I should have a job working for the Air Force in
+            cybersecuity once I graduate.
+            </p>
+        </div>
+        <%= image_tag "dalton.jpeg", style: 'max-width: 32rem;' %>
+    </div>
+</body>
+</html>

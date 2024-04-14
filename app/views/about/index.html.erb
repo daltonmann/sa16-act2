@@ -1,1 +1,84 @@
-Hello about
+<!DOCTYPE html>
+
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+  }
+  h1, h2 {
+      text-align: center;
+  }
+  h2 {
+      color: #333;
+      margin-top: 30px;
+  }
+  .section {
+      margin-top: 20px;
+  }
+  .section h3 {
+      color: #555;
+      margin-bottom: 10px;
+  }
+  p {
+      line-height: 1.6;
+  }
+  header {
+    background-color: lightblue;
+    color: #white;
+    padding: 10px 0;
+    font-color: white;
+    text-align: left;
+  }
+</style>
+
+<body>
+  <header>
+  &nbsp;&nbsp;&nbsp;<%= link_to "About Me", about_path %>&nbsp;&nbsp;&nbsp;<%= link_to "My Work", work_path %>&nbsp;&nbsp;&nbsp;<%= link_to "Contact Me", contact_path %>
+  </header>
+    <div class="container">
+        <h1>About Dalton Mann</h1>
+
+        <div class="section">
+            <h2>Professional Biography</h2>
+            <p>I worked my first job starting in January of 2021 at a local Mexican restaurant called Elena's
+            Taco Shop. After working there for about 8 months, I was promoted from a cashier to a shift leader,
+            where I was given more responsibility, and was trusted to be left alone in charge of the restaurant
+            for short periods of time. I worked there until August of 2022, where I got a job as a grader
+            for a professor at the University of Memphis. I graded for him for a semester and have not had a job
+              since then because of a scholarship I received which prevents me from working during the school semesters.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education Background</h2>
+            <p>I graduated from Arlington High School in 2021 in the top 5% of my class. I then enrolled in the University
+            of Memphis and have been attending since Fall of 2021. I will be graduating in the Fall of 2024 with
+            a Bachelor's degree in computer science with a concentration in cybersecurity. I currently have
+            a 3.9 GPA. </p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <p>I know a few programming languages. Python is my best, but I have had some experience with JavaScript,
+            Ruby, and HTML. I also have some experience using Excel. I can also flick a water bottle cap pretty far. Is that a skill? Not sure, but I felt like
+            I needed to add something else to this section to fill it out.</p>
+        </div>
+
+        <div class="section">
+            <h2>Achievements</h2>
+            <p>I've been awarded a few scholarships during my time at the University of Memphis, including the Presidential
+            scholarship and the CyberCorps Scholarship for Service. Both are competitive scholarships, but the CyberCorps
+            is much more so. Only 3 or 4 students are awarded it every semester. It is only given to those who apply
+            and demonstrate a strong dedication to cybersecurity.</p>
+        </div>
+    </div>
+</body>
+</html>

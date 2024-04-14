@@ -1,1 +1,75 @@
-hello work
+<!DOCTYPE html>
+
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+  }
+  h1, h2 {
+      text-align: center;
+  }
+  h2 {
+      color: #333;
+      margin-top: 30px;
+  }
+  .section {
+      margin-top: 20px;
+  }
+  .section h3 {
+      color: #555;
+      margin-bottom: 10px;
+  }
+  p {
+      line-height: 1.6;
+  }
+  header {
+    background-color: lightblue;
+    color: #white;
+    padding: 10px 0;
+    font-color: white;
+    text-align: left;
+  }
+</style>
+
+<body>
+  <header>
+  &nbsp;&nbsp;&nbsp;<%= link_to "About Me", about_path %>&nbsp;&nbsp;&nbsp;<%= link_to "My Work", work_path %>&nbsp;&nbsp;&nbsp;<%= link_to "Contact Me", contact_path %>
+  </header>
+    <div class="container">
+        <h1>My Work</h1>
+
+        <div class="section">
+            <h2>Elena's Taco Shop</h2>
+            <p>This was my first job and I started there in January of 2021. I was hired
+            as a cashier, but after working there for about 8 months, I was promoted from a cashier to a shift leader,
+            where I was given more responsibility, and was trusted to be left alone in charge of the restaurant
+            for short periods of time. I worked there until August of 2022. I left because I wanted to focus
+            more on school.</p>
+        </div>
+
+        <div class="section">
+            <h2>The University of Memphis</h2>
+            <p>I got a job as a grader shortly after leaving Elena's.
+            I graded for a professor at the University of Memphis named Bill Baggett. I graded for two of his
+            Computer Science classes.
+            I graded for him for just one semester.</p>
+        </div>
+
+        <div class="section">
+            <h2>Present Day</h2>
+            <p>Since I stopped grading in December of 2022, I have not had a job. This is because I received
+            a scholarship that prevents me from working during the school year due to a large stipend
+            being attached to the scholarship. </p>
+        </div>
+    </div>
+</body>
+</html>
